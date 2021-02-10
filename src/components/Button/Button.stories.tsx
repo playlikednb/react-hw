@@ -7,4 +7,6 @@ export default {
   decorators: [withKnobs],
 };
 
-export const withRealField = () => <Button title="Smart Button" />;
+export const withRealField = () => (
+  <Button buttonType="main" title="Smart Button" />
+);

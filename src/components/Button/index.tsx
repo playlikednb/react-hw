@@ -2,6 +2,7 @@ import React from "react";
 
 interface ButtonProps {
   title: string;
+  buttonType: string;
 }
 
 export class Button extends React.Component<ButtonProps> {
@@ -19,7 +20,7 @@ export class Button extends React.Component<ButtonProps> {
 
   render() {
     return (
-      <button onClick={this.onClick}>
+      <button onClick={this.onClick} data-type={this.props.buttonType}>
         {this.props.title}
       </button>
     );
